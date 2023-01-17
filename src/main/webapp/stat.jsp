@@ -59,7 +59,7 @@
 			</tr>
 			<tr>
 				<td><label for="surname">Sumdu Mails:</label></td> 
-				<td>${Stat.getSumduMails()}</td>
+				<td>${stat.getSumduMails()}</td>
 			</tr>
 		</tbody>
 	</table> 

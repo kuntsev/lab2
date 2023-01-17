@@ -88,9 +88,14 @@ public class Utils {
     }
     public static double calculateSumduDomain(LinkedList<Student> studs) throws EmailException{
     int count=0;
+    
         for (Student st:studs) {
-            if (Utils.getEmailDomain(st.getEmail()).equals("sumdu.edu.ua")) {
+            if (
+                    Utils.getEmailDomain(st.getEmail()).equals("sumdu.edu.ua")
+                    ) {
             count++;
+            System.out.println(Utils.getEmailDomain(st.getEmail()));
+            System.out.println(count);
             }
         }
     return count;

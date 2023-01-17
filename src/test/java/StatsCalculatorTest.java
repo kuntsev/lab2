@@ -39,13 +39,13 @@ String result=Utils.getEmailDomain( "test@gmail.com");
 /*@Test
 public void whenExceptionThrown_thenExpectationSatisfied() throws EmailException {
     studs.add(new Student("Exception", "Exception", "-1", "email", "test",  "test"));
-        Assertions.assertThrows(EmailException.class()->_{
-            Utils.calculatePopularDomain(studs);
-            }
-        );
+        Assertions.assertThrows(EmailException.class, () -> {
+            Utils.calculatePopularDomain((LinkedList<Student>) studs);
+            });
+        
 studs.remove(3);
-}
-*/
+}*/
+
 
 @Test
 public void patternMatchesTest() {
@@ -54,12 +54,12 @@ String emailAddress = "username@domain.com";
 }
 
 
-/*@Test
+@Test
 public void calculatePopularDomainTest() throws EmailException{
-String result=Utils.calculatePopularDomain(studs);
+String result=Utils.calculatePopularDomain((LinkedList<Student>) studs);
     Assertions.assertEquals("test.ua", result);
 }
-*/
+
 
 @Test
 public void calculateMeanAgeTest () {
